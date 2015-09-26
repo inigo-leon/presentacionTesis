@@ -1,0 +1,201 @@
+%&latex
+
+\documentclass[size=12pt,display=slidesnotes]{powerdot}
+
+\usepackage[english]{babel}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{kbordermatrix}
+\usepackage{alltt}
+\usepackage{ulem}
+
+\usepackage{listings}
+\usepackage{lstpatch}
+
+%Para poner colores en los listados xml
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\definecolor{Maroon}{RGB}{255,100,0}
+
+
+%Definir las caracteristicas de los listados
+\lstdefinelanguage{XML}
+{
+  basicstyle=\ttfamily\scriptsize,
+  morestring=[b]",
+  moredelim=[s][\bfseries\color{Maroon}]{<}{\ },
+  moredelim=[s][\bfseries\color{Maroon}]{</}{>},
+  moredelim=[l][\bfseries\color{Maroon}]{/>},
+  moredelim=[l][\bfseries\color{Maroon}]{>},
+  morecomment=[s]{<?}{?>},
+  morecomment=[s]{<!--}{-->},
+  commentstyle=\color{DarkOliveGreen},
+  stringstyle=\color{blue},
+  identifierstyle=\color{red},
+}
+\lstset{language=XML,
+        columns=flexible,
+        breaklines=true
+        }
+
+%Para usar múltiples columnas
+\usepackage{multicol} 
+\setlength{\columnsep}{7mm}
+
+%para lineas intermitentes
+\usepackage{arydshln}
+
+\begin{document}
+
+%+Title
+\title{\begin{Large}SECURITY IN PETRI NETS SHARING AND STORAGE: SUBNETS, PRIVACY, INTEGRITY,
+AUTHENTICATION AND NON REPUDIATION\end{Large}}
+
+\begin{large}
+\author{\textbf{I\~nigo Le\'on Samaniego}
+\\
+\\\textbf{Defensa de Tesis Doctoral}\\
+Universidad de La Rioja
+\\
+\\
+\begin{small}Directores: Emilio Jim\'enez Mac\'ias,
+Juan Ignacio Latorre Biel\end{small}
+\\
+}
+
+\maketitle
+%-Title
+\end{large}
+
+
+\section{Introduction}
+\begin{slide}{Entorno}
+\end{slide}
+
+
+
+
+
+
+\begin{slide}{Justificaci\'on de la investigaci\'on}
+\end{slide}
+
+
+
+
+\begin{slide}{Metodolog\'ia}
+\end{slide}
+
+
+
+
+\begin{slide}{Alcance}
+\end{slide}
+
+
+
+
+\section{Subredes}
+\begin{slide}{Conceptos y Definiciones}
+\end{slide}
+
+
+
+
+\begin{slide}{Descomposici\'on en subredes}
+\end{slide}
+
+
+
+\begin{slide}[toc=Front-ends de entrada/salida]{Definici\'on de front-ends de entrada/salida}
+\end{slide}
+
+
+
+
+\begin{slide}{Revisi\'on general de PNML}
+\end{slide}
+
+
+
+
+\begin{slide}[toc=Extensi\'on de subredes para PNML]{Extensión de PNML para soporte de subredes con front-ends}
+\end{slide}
+
+
+
+
+
+
+\section{Seguridad en Redes de Petri}
+\begin{slide}{Alcance}
+\end{slide}
+
+
+
+\begin{slide}{XMLEncryption}
+\end{slide}
+
+
+
+
+\begin{slide}{XMLSignature}
+\end{slide}
+
+
+
+\begin{slide}{Seguridad completa}
+\end{slide}
+
+
+\section{Ejemplos}
+\begin{slide}{Ejemplos}
+\end{slide}
+
+
+
+
+
+
+
+
+
+
+\section{BORRARRRRRRR!!!!!}
+\begin{slide}[method=file]{codigo XML}
+\begin{lstlisting}
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml
+    xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net id="5Philo"
+      type="http://www.pnml.org/version-2009/grammar/ptnet">
+    <page id="page1">
+      <place id="p7">
+        <name>
+          <text>E2</text>
+        </name>
+\end{lstlisting}
+\begin{multicols}{2}
+\begin{lstlisting}[basicstyle=\ttfamily\tiny]
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net id="5Philo" type="http://www.pnml.org/version-2009/grammar/ptnet">
+    <page id="page1">
+      <place id="p7">
+        <name>
+          <text>E2</text>
+        </name>
+\end{lstlisting}
+
+\end{multicols}
+\end{slide}
+
+
+
+
+\end{document}
+
+
